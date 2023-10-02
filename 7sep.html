@@ -1,0 +1,168 @@
+<!-- <script>
+  function add() {
+    var a = 10;
+    var b = 20;
+    var c = a + b;
+    document.write(c);
+  }
+
+  add();
+</script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Functionss..</title>
+  </head>
+  <body>
+    <!-- <script>
+      function demo(x, y, z) {
+        var si = (x * y * z) / 100;
+        document.write(si);
+      }
+      var x = parseInt(prompt("Enter the value"));
+      var y = parseInt(prompt("Enter the value"));
+      var z = parseInt(prompt("Enter the value"));
+      demo(x, y, z);
+    </script> -->
+
+    <!-- <script>
+      function area() {
+        var r = 21;
+        var pi = 3.14;
+        var a = pi * r * r;
+        return a;
+      }
+      area();
+      document.write(area());
+      document.write("<br>");
+      // by third variable...
+      var x = area();
+      document.write(x);
+    </script> -->
+
+    <!-- <script>
+      function add(a, b) {
+        return a + b;
+      }
+      var a = parseInt(prompt("Enter the value"));
+      var b = parseInt(prompt("Enter the value"));
+
+      document.write(add(a, b));
+    </script> -->
+
+    <!-- <script>
+      var anno = function () {
+        alert("Hellllloo");
+      };
+      anno();
+    </script> -->
+
+    <!-- <script>
+      var test = function (x, y) {
+        return x + y;
+      };
+      var x = parseInt(prompt("Enter the value"));
+      var y = parseInt(prompt("Enter the value"));
+      document.write(test(x, y));
+    </script> -->
+
+    <!-- <script>
+      var swap = function (a, b, c) {
+        var a = a + b + c;
+        var b = a - b - c;
+        var c = a - b - c;
+        var a = a - b - c;
+        document.write(a);
+        document.write("<br>");
+        document.write(b);
+        document.write("<br>");
+        document.write(c);
+        document.write("<br>");
+      };
+
+      swap(20, 30, 40);
+    </script> -->
+
+    <!-- <script>
+      // arrow function
+      var view = () => {
+        alert("Hello");
+      };
+      view();
+    </script> -->
+
+    <!-- <script>
+      var F = (x) => {
+        var fact = 1;
+        for (var i = 1; i <= x; i++) {
+          fact = fact * i;
+        }
+        return fact;
+      };
+      var x = parseInt(prompt("Enter the number: "));
+      alert(F(x));
+    </script> -->
+
+    <!-- <script>
+      var sum = 0;
+      var odd = 1;
+      var even = (x) => {
+        for (var i = 2; i <= x; i++) {
+          if (i % 2 == 0) {
+            sum = sum + i;
+          } else {
+            odd += i;
+          }
+        }
+        return sum;
+      };
+      document.write("Even " + even(10));
+      document.write("<br>");
+      document.write("Odd " + odd);
+      document.write("<br>");
+      document.write("Sum " + (sum + odd));
+    </script> -->
+
+    <!-- <script>
+      (() => {
+        alert("OOOYe");
+      })();
+    </script> -->
+
+    <!-- <script>
+      (() => {
+        var a = 10;
+        var b = 20;
+        var c = a + b;
+        document.write("Sum " + c);
+      })();
+    </script> -->
+    <!-- <script>
+      var a = parseInt(prompt("Enter the first value"));
+      var b = parseInt(prompt("Enter the second value"));
+      var c = parseInt(prompt("Enter the third value"));
+
+      ((a, b, c) => {
+        var ans = a + b + c;
+        document.write(ans);
+      })(a, b, c);
+    </script> -->
+    <script>
+      function show() {
+        var x = document.getElementById("para1");
+        x.style.fontSize = "50px";
+        x.style.color = "blue";
+        x.style.backgroundColor = "grey";
+        x.style.fontFamily = "cursive";
+        // x.style.fontSize = "200px";
+        var y = document.getElementById("para2");
+        y.innerHTML = "How can it happen????";
+      }
+    </script>
+
+    <p id="para1">HELLLLLOOOO....</p>
+    <p id="para2"></p>
+    <button id="btn1" onclick="show()">btn1</button>
+  </body>
+</html>

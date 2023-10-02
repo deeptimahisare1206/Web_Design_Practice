@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>LOGIN</title>
+  </head>
+
+  <style>
+    input[type="text"] {
+      width: 300px;
+      height: 40px;
+      border-radius: 50px;
+    }
+    input[type="password"] {
+      width: 300px;
+      height: 40px;
+      border-radius: 50px;
+    }
+    input[type="submit"] {
+      width: 100px;
+      height: 40px;
+      border-radius: 50px;
+      background-color: rgba(255, 166, 0, 0.806);
+      box-shadow: 1px 1px 15px gold;
+    }
+    body {
+      background-color: black;
+    }
+    div {
+      height: 450px;
+      width: 400px;
+      background-color: grey;
+      border-radius: 50px;
+      margin: 10%;
+      border: 7px double yellow;
+    }
+    h1 {
+      color: white;
+    }
+    label {
+      text-align: left;
+    }
+    #wrong {
+      color: red;
+      font-size: small;
+    }
+  </style>
+
+  <script>
+    function signUp() {
+      var rmail = "golugappa@gmail.com";
+      var rpass = 420;
+      var mail = document.getElementById("email").value;
+      var pass = document.getElementById("paswd").value;
+
+      if (mail == rmail && pass == rpass) {
+        alert("WELCOME " + rmail);
+      } else {
+        var rong = document.getElementById("wrong");
+        rong.innerHTML = "Try again...";
+      }
+    }
+  </script>
+  <body>
+    <center>
+      <div>
+        <br />
+        <h1>Login Form</h1>
+        <p>Please enter required details</p>
+
+        <label>Email or Phone:</label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Email or Phone"
+          id="email"
+        />
+        <br />
+        <br />
+        <label>Password: </label>
+        <br />
+        <input type="password" required placeholder="Password" id="paswd" />
+        <br />
+        <p id="wrong"></p>
+
+        <input type="submit" value="Login" onclick="signUp()" />
+
+        <br />
+        <br />
+
+        <a href="">Forgot Password????</a>
+        <br /><br />
+        Don't have an account? <a href="">Sign Up</a>
+      </div>
+    </center>
+  </body>
+</html>

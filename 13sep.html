@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Regular expression</title>
+    <script>
+      function valid() {
+        var txt = document.getElementById("txt");
+        var display = document.getElementById("dis");
+        if (txt.value.trim() === "") {
+          display.innerHTML = "Enter data";
+          txt.focus();
+          return false;
+        } else {
+          //   var reg = /\d/;
+          //   var reg = /[A-Z]/;
+          //   var reg = /^[A-Z]/;
+          //   var reg = /^[A-Z]+$/;
+          var reg = /^[a-z]+$/;
+          //   var reg = /^[a-z]/;
+          //   var reg = /^[0-9]+$/;
+          //   var reg = /^[6-9].[0-9]/;
+          //   var reg = /[!@#$%^&*()]/;
+          //   var reg = /^[+][9][1][0-9]/;
+          var reg = /[0-9]+[a-z]+[!@#$%^&*()]/;
+          if (reg.test(txt.value)) {
+            display.innerHTML = "Valid data";
+            return true;
+          } else {
+            display.innerHTML = "Invalid data";
+            return false;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="txt" name="txt" onkeyup="valid()" maxlength="13" />
+    <span style="color: red" id="dis">*</span><br /><br />
+    <input type="submit" onclick="valid()" value="check" /><br /><br />
+  </body>
+</html>

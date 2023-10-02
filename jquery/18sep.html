@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>18sep</title>
+    <script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <!-- <script>
+      $(document).ready(function () {
+        $("#btn").mouseenter(function () {
+          alert("hell");
+        });
+        $("#btn2").mouseleave(function () {
+          alert("poco");
+        });
+      });
+    </script> -->
+
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("p").hide(1000);
+        });
+        $("#show").dblclick(function () {
+          $("p").show(1000);
+        });
+        $("#toggle").click(function () {
+          $("p").toggle(1000);
+        });
+        $("#hide").click(function () {
+          $("div").hide(1000);
+        });
+        $("#show").dblclick(function () {
+          $("div").show(1000);
+        });
+        $("#toggle").click(function () {
+          $("div").toggle(1000);
+        });
+        $("#fadeout").click(function () {
+          $("div").fadeOut(1000);
+        });
+        $("#fadein").click(function () {
+          $("div").fadeIn(1000);
+        });
+        $("#fadetoggle").click(function () {
+          $("div,h3").fadeToggle(1000);
+        });
+      });
+    </script>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-image: radial-gradient(
+          violet,
+          indigo,
+          blue,
+          green,
+          yellow,
+          orange,
+          red
+        );
+        float: left;
+      }
+      button {
+        height: 50px;
+        border-radius: 30px;
+        background-color: aquamarine;
+        box-shadow: 5px 5px 5px red;
+        box-shadow: 10px 10px 10px,green;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button id="btn">MouseEnter</button>
+    <button id="btn2">MouseLeave</button> -->
+
+    <button id="hide">HIDE</button>
+    <button id="show">Show</button>
+    <button id="toggle">TOGGLE</button>
+    <button id="fadeout">FadeOut</button>
+    <button id="fadein">FadeIn</button>
+    <button id="fadetoggle">FadeToggle</button>
+    <p>
+      <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed error
+        perspiciatis voluptatum repellendus?</h3>
+    </p>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var x = parseInt(prompt("Enter you DOB :"));
+
+      ((x) => {
+        var year = 2023;
+        document.write("Leap years are:<br>");
+        for (var i = x; i <= year; i++) {
+          if (i % 4 == 0 || i % 400 == 0 || i % 100 == 0) {
+            document.write(i);
+            document.write("<br>");
+          }
+        }
+      })(x);
+    </script>
+  </body>
+</html>

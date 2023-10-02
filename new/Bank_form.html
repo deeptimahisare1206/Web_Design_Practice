@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bank Form</title>
+
+    <style>
+
+      label{
+        font-weight: bolder;
+      }
+
+      input [type="email"]{
+        background-color: red;
+        height: 50px;
+        width: 500px;
+      }
+
+      input [type="submit"]{
+
+        background-color: blue;
+      }
+    </style>
+
+  </head>
+  <body>
+    <center>
+    <table >
+      <thead>
+       <center> <h1>Bank Forms</h1></center>
+      </thead>
+      <form>
+        <tr><td><label>Account Type</label></td>
+          <td>
+            <select >
+              <option value="select">Select</option>
+              <option value="general">General</option>
+              <option value="saving">Saving</option>
+              <option value="personal">Personal</option>
+              <option value="fixed">Fixed</option>
+              <option value="join">Joint</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <label><b>Name:</b> </label>
+            <td><input type="text" name="name" placeholder="First name" /><br>
+          </td>
+          </td>
+          <td>
+            <br>
+            <input type="text" name="name" placeholder="Last name" /> <br /><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Date of Birth: </label>
+            <td><input type="date" name="dob" />
+            <br />
+            <br>
+          </td>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <label>Gender: </label>
+          </td>
+          <td>
+            <input type="radio" name="gender">Male
+            
+            <input type="radio" name="gender">Female
+            
+            <input type="radio" name="gender">
+            Others
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Address: </label>
+           <td> <input type="text" name="add" />
+            <br />
+            
+          </td>
+          <td>
+            <br><input type="text" name="pin" placeholder="Pin Code">
+          <br>
+          <br>
+          </td>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Phone: </label></td>
+          <td>
+            <input
+              type="text"
+              name="phone"
+              maxlength="10"
+              placeholder="number"
+              required
+            />
+            <br>
+            <br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Email: </label></td>
+          <td><input type="email" name="email" required /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label >Facilities: </label>
+          </td>
+          <td>
+            <input type="checkbox" name="facil" >UPI
+            <br>
+            <input type="checkbox" name="facil" >Netbanking
+            <br>
+            <input type="checkbox" name="facil" >Gpay
+            <br>
+            <input type="checkbox" name="facil" >Patym
+            <br>
+          </td>
+        </tr>
+         <tr>
+      
+          <td colspan="3">
+            <center>
+            <input type="submit" name="submit" >
+            <input type="reset" name="Clear all" value="Clear all">
+        </center>  
+          </td>
+        
+        </tr>
+      
+      </form>
+    </table>
+</center>
+  </body>
+</html>

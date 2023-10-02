@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function show() {
+        // alert("Button clicked");
+        var x = document.getElementById("para1");
+        x.style.backgroundColor = "black";
+        x.style.color = "white";
+      }
+      function test() {
+        var x = document.getElementById("para1");
+        x.style.color = "yellow";
+        x.style.backgroundColor = "red";
+      }
+      function view() {
+        var x = document.getElementById("para1");
+        x.style.color = "black";
+        x.style.backgroundColor = "aqua";
+      }
+      function defo() {
+        var x = document.getElementById("para1");
+        x.style.backgroundColor = "green";
+      }
+      function present() {
+        var x = document.getElementById("para1");
+        x.style.fontFamily = "cursive";
+        x.style.backgroundColor = "violet";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <body onload="alert('Welcome Deep')">-->
+    <button onclick="show()">click</button>
+    <button ondblclick="test()">Double click</button>
+    <p id="para1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sit
+      architecto accusamus voluptatum qui enim ratione assumenda commodi est!
+      Saepe commodi facere nulla deleniti! Explicabo non est veritatis ipsa rem?
+    </p>
+    <hr />
+    <button onmouseenter="view()">mouse enter</button><br /><br />
+    <button onmouseleave="show()">mouse leave</button><br /><br />
+    <button onmousemove="test()">mouse move</button><br /><br />
+    <button onmouseover="defo()">mouse over</button><br /><br />
+    <button onmouseout="view()">mouse out</button><br /><br />
+    <button onmouseup="show()">mouse out</button><br /><br />
+    <button onmouseout="test()">mouse out</button><br /><br />
+    <hr />
+    <hr />
+    <!-- //key events -->
+    <input type="text" name="txt" id="" onkeydown="show()" /><br /><br />
+    <input type="text" name="txt" id="" onkeyup="show()" /><br /><br />
+    <input type="text" name="txt" id="" onkeypress="present()" /><br /><br />
+    <!-- form events -->
+    <!-- on submit ,on change, on blur ,on focus -->
+  </body>
+</html>

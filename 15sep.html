@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("p,div,span,h1").css("color", "green");
+          $(".para1").css("font-size", "32px");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae
+      harum quo eos ipsam eaque itaque voluptas rerum totam et.
+    </p>
+    <p class="para1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae
+      harum quo eos ipsam eaque itaque voluptas rerum totam et.
+    </p>
+    <p class="para1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae
+      harum quo eos ipsam eaque itaque voluptas rerum totam et.
+    </p>
+    <p class="para1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae
+      harum quo eos ipsam eaque itaque voluptas rerum totam et.
+    </p>
+    <div>Lorem, ipsum dolor sit amet</div>
+    <h1>Lorem, ipsum dolor sit amet</h1>
+    <span>Lorem, ipsum dolor sit amet</span>
+    <button id="btn">btn</button>
+  </body>
+</html>

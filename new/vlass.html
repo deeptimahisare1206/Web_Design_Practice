@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function on() {
+        var onn = (document.getElementById("on").src = "turnon.jpeg");
+      }
+      function off() {
+        var onn = (document.getElementById("on").src = "turnoff.jpeg");
+      }
+    </script>
+  </head>
+  <body>
+    <img src="turnoff.jpeg" alt="not found" id="on" />
+    <br>
+    <button onclick="document.getElementById('on').src = "turnon.jpeg"" id="on">Turn on Gulub</button>
+
+    <button onclick="turnoff()" id="off">Turn off Gulub</button>
+  </body>
+</html>

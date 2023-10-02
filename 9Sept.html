@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        width: 100px;
+        height: 30px;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        background-image: radial-gradient(
+          violet,
+          indigo,
+          blue,
+          green,
+          yellow,
+          orange,
+          red
+        );
+      }
+    </style>
+    <script>
+      function add() {
+        var a = document.getElementById("value1").value;
+        var b = document.getElementById("value2").value;
+        var c = parseInt(a) + parseInt(b);
+        var ans = document.getElementById("value3");
+        ans.value = c;
+      }
+
+      function sub() {
+        var a = document.getElementById("value1").value;
+        var b = document.getElementById("value2").value;
+        var c = parseInt(a) - parseInt(b);
+        var ans = document.getElementById("value3");
+        ans.value = c;
+      }
+
+      function multiply() {
+        var a = document.getElementById("value1").value;
+        var b = document.getElementById("value2").value;
+        var c = parseInt(a) * parseInt(b);
+        var ans = document.getElementById("value3");
+        ans.value = c;
+      }
+
+      function division() {
+        var a = document.getElementById("value1").value;
+        var b = document.getElementById("value2").value;
+        var c = parseInt(a) / parseInt(b);
+        var ans = document.getElementById("value3");
+        ans.value = c;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name="txt1" id="value1" />
+    <input type="text" name="txt2" id="value2" />
+    <br />
+    <br />
+    <input type="text" name="txt3" id="value3" value="answer" readonly />
+    <br />
+    <br />
+    <button onclick="this.innerHTML = add()">+</button>
+    <br />
+    <br />
+
+    <button onclick="sub()">-</button><br />
+    <br />
+    <button onclick="multiply()">*</button>
+    <br />
+    <br />
+
+    <button onclick="division()">/</button>
+    <br />
+    <br />
+  </body>
+</html>

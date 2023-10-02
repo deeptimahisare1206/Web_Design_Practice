@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div{
+        border: 5px double black;
+        width: 400px;
+        padding: 10px;
+      }
+    </style>
+    <script>
+      function corr() {
+        var txt = document.getElementById("txt");
+        var show = document.getElementById("show");
+        if (txt.value.trim() === "") {
+          show.style.color = "black";
+          show.innerHTML = "Enter the data";
+          txt.focus();
+          return false;
+        } else {
+          var reg = /^[a-z]+[0-9]+[@]+[a-z]{5,6}[.][a-z]{3}$/;
+          if (reg.test(txt.value)) {
+            show.style.color = "green";
+            show.innerHTML = "Valid data";
+            return true;
+          } else {
+            show.style.color = "red";
+            show.innerHTML = "Invalid data";
+            return false;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <br>
+    <input type="text" id="txt" onkeyup="corr()" />
+    <span style="color: red" id="show">*</span>
+    <br />
+    
+    <p>
+      <ul>
+        <li>The Mail-Id should contain Lower case and then number.</li>
+      </ul>
+    </p>
+    <input type="submit" onclick="corr()" value="check" />
+  </div>
+  </body>
+</html>

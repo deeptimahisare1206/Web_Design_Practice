@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("p").css("color", "indigo");
+        //   $(".para1,div,span,h1").css({
+        //     fontSize: "26px",
+        //     backgroundColor: "yellow",
+        //     color: "red",
+        //   });
+          $("p div h1").css({
+            fontFamily: "cursive",
+            backgroundColor: "black",
+            color: "white",
+          });
+          $("input[type='text']").css({
+            backgroundColor: "black",
+            color: "white",
+          });
+
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p class="para1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ev voluptatem
+      est illo?
+    </p>
+    <p class="para2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab evuptatem est
+      illo?
+    </p>
+    <p class="para3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab evptatem est
+      illo?
+    </p>
+    <p class="para4">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab em est illo?
+    </p>
+    <p class="para5">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab em est illo?
+    </p>
+    <p class="para6">Lorem ipsum dolor si culpa aut voluptatem est illo?</p>
+    <div>Lorem, ipsum dolor sit amet consectetur adip</div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+    <span>Lorem ipsum dolor sit amet, cor adipisicing elit.</span>
+    <br />
+    <br>
+    <center><button id="btn">DUBUK</button></center>
+    <br>
+    <p><div><h1>Hello</h1></div></p>
+    <h1>Welcome</h1>
+    <hr><hr>
+<br>
+    <input type="text" name="txt">
+  </body>
+</html>

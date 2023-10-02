@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function vali() {
+        var txt = document.getElementById("txt");
+        if (txt.value.trim() === "") {
+          alert("plz enter any value");
+          txt.focus();
+          return false;
+        }
+        var male = document.getElementById("male");
+        var female = document.getElementById("female");
+        if (male.checked === false && female.checked === false) {
+          alert("enter gen");
+          return false;
+        }
+        var city = document.getElementById("city");
+        if (city.selectedIndex === 0) {
+          alert("enter city");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="" method="" onsubmit="return vali()">
+      txt<br />
+      <input type="text" name="txt" id="txt" />
+      <br />
+      gen<br />
+      male<input type="radio" name="gen" value="male" id="male" /> female<input
+        type="radio"
+        name="gen"
+        value="female"
+        id="female"
+      />
+      <br />
+      <select id="city">
+        <option>enter city</option>
+        <option value="indore">indore</option>
+        <option value="bhopal">bhopal</option>
+        <option value="ujjain">ujjain</option>
+        <option value="harda">harda</option>
+      </select>
+      <br />
+      <input type="submit" value="check" />
+    </form>
+  </body>
+</html>

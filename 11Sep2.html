@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+        border-radius: 0 50% 50% 50%;
+        transform: rotate(45deg);
+        margin: 50px;
+        background-color: lavender;
+      }
+    </style>
+    <script>
+      function change() {
+        var x = document.getElementById("colour");
+        var y = document.getElementById("slct").value;
+        x.style.backgroundColor = y;
+      }
+      function show() {
+        var x = document.getElementById("focus");
+        x.style.backgroundColor = "black";
+        x.style.color = "white";
+      }
+      function test() {
+        var x = document.getElementById("focus");
+        x.style.color = "yellow";
+        x.style.backgroundColor = "red";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="colour"></div>
+    <br />
+    <select id="slct" onchange="change()">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="violet">Violet</option>
+      <option value="yellow">Yellow</option>
+      <option value="orange">Orange</option>
+      <option value="lavender">Lavender</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option></select
+    ><br /><br />
+    <input type="text" name="" id="focus" onfocus="show()" onblur="test()" />
+  </body>
+</html>

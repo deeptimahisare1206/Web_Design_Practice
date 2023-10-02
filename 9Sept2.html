@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <script>
+      function demo() {
+        var para1 = document.getElementById("para1");
+        para1.innerHTML = Date();
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="demo()">btn</button>
+    <p id="para1"></p>
+    <button onclick=" document.getElementById('para1').innerHTML = Date()">
+      Date
+    </button>
+    <br />
+    <br />
+    <button onclick=" this.innerHTML = Date()">DATE on btn</button>
+  </body>
+</html>
