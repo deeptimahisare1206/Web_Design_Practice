@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <script>
+      function msg() {
+        var x = document.getElementById("give");
+        x.innerHTML = "Hello";
+      }
+      function msg2() {
+        var x = document.getElementById("give");
+        x.innerHTML = "";
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="button"
+      onmouseover="msg()"
+      value="Call function"
+      onmouseleave="msg2()"
+    />
+    <br />
+    <span
+      id="give"
+      style="
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        font-size: 90px;
+        line-height: 100px;
+      "
+    ></span>
+  </body>
+</html>
